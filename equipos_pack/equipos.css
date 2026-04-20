@@ -79,7 +79,6 @@ main {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    border: solid blue 2px;
 }
 
 .fila1_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
@@ -147,7 +146,6 @@ main {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    border: solid red 2px;
 }
 
 .fila2_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
@@ -208,6 +206,208 @@ main {
     transform: scale(1.05); /*para hacer animacion suave*/
 }
 
+/*fila 3*/
+.fila3_equipos {
+    width: 1000px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.fila3_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.osasuna {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.osasuna:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.espanyol {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.espanyol:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.girona {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.girona:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.athletic {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.athletic:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+/*fila 4*/
+.fila4_equipos {
+    width: 1000px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.fila4_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.rayoVallecano {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.rayoVallecano:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.valencia {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.valencia:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.mallorca {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.mallorca:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.sevilla {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.sevilla:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+
+/*fila 5*/
+.fila5_equipos {
+    width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.fila5_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.alaves {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.alaves:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.elche {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.elche:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.levante {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.levante:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.oviedo {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.oviedo:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
 
 
 
