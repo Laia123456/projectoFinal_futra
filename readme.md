@@ -5,12 +5,12 @@ gantt
   title Planificació del projecte
   dateFormat YYYY-MM-DD
   section Sprint 1
-  Diagrama Gantt      :a1, 2026-04-20, 3d
-  Disseny inicial     :a2, 2026-04-20, 5d
+  Diagrama Gantt      :a1, 2026-04-20, 4d
+  Disseny inicial     :a2, 2026-04-20, 6d
   section Sprint 2
   Desenvolupament web :b1, 2026-04-27, 22d
   Proves              :b2, after b1, 3d
-  Raspberry           :b3, 2026-05-04, 1d
+  Raspberry           :b3, 2026-05-04, 5d
   section Sprint 3
   Desplegament        :c1, 2026-05-25, 5d
   Presencació         :c2, 2026-05-29, 3d
