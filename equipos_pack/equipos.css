@@ -65,6 +65,150 @@ button:hover { /*añadir hover al boton*/
 
 /*main*/
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*fila 1*/
+.fila1_equipos {
+    width: 1000px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    border: solid blue 2px;
+}
+
+.fila1_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.barca {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.barca:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.realMadrid {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.realMadrid:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.atleticoMadrid {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.atleticoMadrid:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.villareal {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.villareal:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+/*fila 2*/
+.fila2_equipos {
+    width: 1000px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    border: solid red 2px;
+}
+
+.fila2_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.betis {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.betis:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.celta {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.celta:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.realSociedad {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.realSociedad:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+.getafe {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
+}
+
+.getafe:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05); /*para hacer animacion suave*/
+}
+
+
 
 
 /*footer*/
