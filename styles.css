@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #1C1C1E;
+    color: whitesmoke;
+    margin: 0;
+    border: blue solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+}
+
+.p_header {
+    margin: 0;
+}
+
+main {
+
+}
+
+footer {
+    background-color: #1C1C1E;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.p_footer {
+    margin: 0;
+}
+
+.li_nav {
+    border: solid red 2px;
+    width: 450px;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
