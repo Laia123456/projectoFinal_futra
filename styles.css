@@ -4,6 +4,7 @@ body {
     background-color: whitesmoke;
 }
 
+/*header*/
 header {
     background-color: #1C1C1E;
     color: whitesmoke;
@@ -22,9 +23,16 @@ header {
     justify-content: center;
 }
 
+.section1_headerIncio a { /*para quitar el estilo de los enlaces*/
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 h1 {
     font-size: 50px;
     margin: 0;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .button_incioSesion {
@@ -36,7 +44,12 @@ h1 {
     top: 5;
     right: 0;
     margin-right: 25px;
-    border-style: none; /*quitar el estilo delborde del boton*/
+    border-style: none; /*quitar el estilo del borde del boton*/
+}
+
+button:hover { /*añadir hover al boton*/
+    cursor: pointer;
+    background-color: #d4d4d4;
 }
 
 .li_nav {
@@ -49,14 +62,12 @@ h1 {
     justify-content: space-between;
 }
 
-.li_nav a { /*para quitar el estilo de enlace*/
-    text-decoration: none;
-    color: whitesmoke;
-}
+
+/*main*/
 
 
-/**/
 
+/*footer*/
 footer {
     background-color: #1C1C1E;
     color: whitesmoke;
