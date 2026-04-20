@@ -5,7 +5,7 @@ gantt
   title Planificació del projecte
   dateFormat YYYY-MM-DD
   section Sprint 1
-  Gantt               :a1, 2026-04-20, 3d
+  Diagrama Gantt      :a1, 2026-04-20, 3d
   Disseny inicial     :a2, 2026-04-20, 5d
   section Sprint 2
   Desenvolupament web :b1, 2026-04-27, 22d
