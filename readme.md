@@ -13,7 +13,7 @@ gantt
   Raspberry           :b3, 2026-05-04, 1d
   section Sprint 3
   Desplegament        :c1, 2026-05-25, 5d
-  Presencació         :c2, after c1, 3d
+  Presencació         :c2, 2026-05-29, 3d
 ```
 
 ## Integrants del porjecte
