@@ -45,6 +45,7 @@ h1 {
     right: 0;
     margin-right: 25px;
     border-style: none; /*quitar el estilo del borde del boton*/
+    margin-top: -15px;
 }
 
 button:hover { /*añadir hover al boton*/
