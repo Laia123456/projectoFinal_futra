@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: "Funnel Display", sans-serif;
+    background-color: whitesmoke;
+}
+
+/*header*/
+header {
+    background-color: #1C1C1E;
+    color: whitesmoke;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /*para poner el boton a la derecha*/
+}
+
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.button_incioSesion {
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: absolute; /*para poner el boton a la derecha*/
+    margin-top: -45px;
+    top: 5;
+    right: 0;
+    margin-right: 25px;
+    border-style: none; /*quitar el estilo del borde del boton*/
+}
+
+button:hover { /*añadir hover al boton*/
+    cursor: pointer;
+    background-color: #d4d4d4;
+}
