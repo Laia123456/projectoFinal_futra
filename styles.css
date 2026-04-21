@@ -43,6 +43,7 @@ h1 {
     position: absolute; /*para poner el boton a la derecha*/
     top: 5;
     right: 0;
+    margin-top: -15px;
     margin-right: 25px;
     border-style: none; /*quitar el estilo del borde del boton*/
 }

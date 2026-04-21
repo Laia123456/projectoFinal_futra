@@ -22,7 +22,7 @@ header a {
 
 h1 {
     font-size: 50px;
-    margin: 0;
+    margin: 5px;
 }
 
 .button_incioSesion {
@@ -31,7 +31,7 @@ h1 {
     font-size: 15px;
     border-radius: 5px;
     position: absolute; /*para poner el boton a la derecha*/
-    margin-top: -45px;
+    margin-top: -50px;
     top: 5;
     right: 0;
     margin-right: 25px;
@@ -41,4 +41,70 @@ h1 {
 button:hover { /*añadir hover al boton*/
     cursor: pointer;
     background-color: #d4d4d4;
+}
+
+/*main*/
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.form_inicioSesion {
+    background-color: #E0E0E0;
+    width: 700px;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+}
+
+.form_inicioSesion input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+}
+
+.p_incioSesion {
+    font-size: 17px;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+.button_inciaSesion {
+    border-radius: 15px;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+}
+
+.button_registrate{
+    border-radius: 15px;
+    width: 125px;
+    height: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+}
+
+
+/*footer*/
+footer {
+    background-color: #1C1C1E;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.p_footer {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
