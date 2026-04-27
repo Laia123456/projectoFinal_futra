@@ -12,7 +12,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /*para poner el boton a la derecha*/
+    position: relative;
+    border-bottom: solid 1px #3A3A3C;
 }
 
 header a {
@@ -26,21 +27,24 @@ h1 {
 }
 
 .button_incioSesion {
-    height: 30px;
-    width: 120px;
+    height: 35px;
+    width: 130px;
     font-size: 15px;
-    border-radius: 5px;
-    position: absolute; /*para poner el boton a la derecha*/
-    margin-top: -50px;
-    top: 5;
-    right: 0;
-    margin-right: 25px;
-    border-style: none; /*quitar el estilo del borde del boton*/
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    border: solid 2px whitesmoke;
+    background-color: whitesmoke;
+    color: #1C1C1E;
+    font-family: "Funnel Display", sans-serif;
 }
 
-button:hover { /*añadir hover al boton*/
+.button_incioSesion:hover {
+    background-color: transparent;
+    color: whitesmoke;
     cursor: pointer;
-    background-color: #d4d4d4;
 }
 
 /*main*/
@@ -50,7 +54,7 @@ main {
 }
 
 .form_inicioSesion {
-    background-color: #E0E0E0;
+    background-color: #2C2C2E;
     width: 700px;
     height: 500px;
     margin-top: 100px;
@@ -62,6 +66,8 @@ main {
     justify-content: center;
     gap: 15px;
     font-size: 25px;
+    color: whitesmoke;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .form_inicioSesion input {
@@ -70,13 +76,14 @@ main {
     border-radius: 8px;
     font-family: "Funnel Display", sans-serif;
     font-size: 16px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    background-color: whitesmoke;
+    border: none;
+    color: #3A3A3C;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.p_incioSesion {
-    font-size: 17px;
-    margin-top: 70px;
-    margin-bottom: 0;
+.form_inicioSesion input:focus {
+    outline: solid 2px #0A84FF;
 }
 
 .button_inciaSesion {
@@ -84,16 +91,29 @@ main {
     width: 170px;
     height: 50px;
     font-size: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    background-color: #0A84FF;
+    color: white;
+    border: none;
+    font-family: "Funnel Display", sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.button_registrate{
+.button_registrate {
     border-radius: 15px;
     width: 125px;
     height: 30px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    background-color: transparent;
+    border: solid 2px whitesmoke;
+    color: whitesmoke;
+    font-family: "Funnel Display", sans-serif;
 }
 
+.p_incioSesion {
+    font-size: 17px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    color: #AEAEB2;
+}
 
 /*footer*/
 footer {
@@ -104,6 +124,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    border-top: solid 1px #3A3A3C;
 }
 
 .p_footer {
