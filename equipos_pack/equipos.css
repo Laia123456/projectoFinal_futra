@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /*para poner el boton a la derecha*/
+    position: relative;
 }
 
 .section1_headerIncio {
@@ -23,7 +23,7 @@ header {
     justify-content: center;
 }
 
-.section1_headerIncio a { /*para quitar el estilo de los enlaces*/
+.section1_headerIncio a {
     text-decoration: none;
     color: whitesmoke;
 }
@@ -40,15 +40,15 @@ h1 {
     width: 120px;
     font-size: 15px;
     border-radius: 5px;
-    position: absolute; /*para poner el boton a la derecha*/
+    position: absolute;
     top: 5;
     right: 0;
     margin-right: 25px;
-    border-style: none; /*quitar el estilo del borde del boton*/
+    border-style: none;
     margin-top: -15px;
 }
 
-button:hover { /*añadir hover al boton*/
+button:hover {
     cursor: pointer;
     background-color: #d4d4d4;
 }
@@ -63,21 +63,7 @@ button:hover { /*añadir hover al boton*/
     justify-content: space-between;
 }
 
-
 /*main*/
-
-.grl_equipos {
-    border: 1px solid red;
-}
-
-.laliga_logo img {
-    width: 20px;
-}
-
-.banderaEspana img {
-    width: 5px;
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -88,7 +74,7 @@ main {
 .container_filtrosEquipos {
     background-color: #E0E0E0;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 250px;
     height: 350px;
     display: flex;
@@ -103,7 +89,7 @@ main {
     width: 135px;
     margin-left: 15px;
     border-radius: 7px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -112,7 +98,106 @@ main {
     margin-top: 15px;
     margin-left: 5px;
     width: 200px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info_equipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.media90 {
+    background-color: #27AD60;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.media80 {
+    background-color: #2ECC71;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.media70 {
+    background-color: #FFD54F;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.media60 {
+    background-color: #F28742;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.fila1_equipos > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila2_equipos > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila3_equipos > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila4_equipos > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila5_equipos > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* elementos pequeños */
+.laliga_logo img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.banderaEspana img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.grl_equipos p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.grl_equipos{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.laliga_logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.banderaEspana {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /*fila 1*/
@@ -124,66 +209,76 @@ main {
     gap: 20px;
 }
 
-.fila1_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
-    width: 150px;
-    height: 150px;
-    object-fit: contain; /*para fijar img del mismo tamaño*/
-}
-
 .barca {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .barca:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .realMadrid {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .realMadrid:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .atleticoMadrid {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .atleticoMadrid:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .villareal {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .villareal:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 /*fila 2*/
@@ -195,66 +290,76 @@ main {
     gap: 20px;
 }
 
-.fila2_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
-    width: 150px;
-    height: 150px;
-    object-fit: contain; /*para fijar img del mismo tamaño*/
-}
-
 .betis {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .betis:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .celta {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .celta:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .realSociedad {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .realSociedad:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .getafe {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .getafe:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 /*fila 3*/
@@ -266,66 +371,76 @@ main {
     gap: 20px;
 }
 
-.fila3_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
-    width: 150px;
-    height: 150px;
-    object-fit: contain; /*para fijar img del mismo tamaño*/
-}
-
 .osasuna {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .osasuna:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .espanyol {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .espanyol:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .girona {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .girona:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .athletic {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .athletic:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 /*fila 4*/
@@ -337,68 +452,77 @@ main {
     gap: 20px;
 }
 
-.fila4_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
-    width: 150px;
-    height: 150px;
-    object-fit: contain; /*para fijar img del mismo tamaño*/
-}
-
 .rayoVallecano {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .rayoVallecano:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .valencia {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .valencia:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .mallorca {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .mallorca:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .sevilla {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .sevilla:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
-
 
 /*fila 5*/
 .fila5_equipos {
@@ -410,69 +534,77 @@ main {
     gap: 20px;
 }
 
-.fila5_equipos img { /*para que las fotos se ean del mismo tamaño automaticamente*/
-    width: 150px;
-    height: 150px;
-    object-fit: contain; /*para fijar img del mismo tamaño*/
-}
-
 .alaves {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .alaves:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .elche {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .elche:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .levante {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .levante:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
 
 .oviedo {
     background-color: #E0E0E0;
     padding: 10px;
     border-radius: 15px;
-    transition: transform 0.4s ease-in-out; /*para hacer animacion suave*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*para añadir sombra*/
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .oviedo:hover {
     cursor: pointer;
     background-color: #CFCFCF;
-    transform: scale(1.05); /*para hacer animacion suave*/
+    transform: scale(1.05);
 }
-
-
 
 /*footer*/
 footer {
