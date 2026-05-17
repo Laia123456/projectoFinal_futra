@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    font-family: "Funnel Display", sans-serif;
+    background-color: whitesmoke;
+}
+
+/*header*/
+header {
+    background-color: #1C1C1E;
+    color: whitesmoke;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section1_headerIncio {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1_headerIncio a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button_incioSesion {
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5;
+    right: 0;
+    margin-right: 25px;
+    border-style: none;
+    margin-top: -15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #d4d4d4;
+}
+
+.li_nav {
+    width: 700px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*main*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.container_filtrosJugadores {
+    background-color: #E0E0E0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 500px;
+}
+
+.select_filtroJugadores {
+    font-family: "Funnel Display", sans-serif;
+    background-color: white;
+    width: 135px;
+    margin-left: 15px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.input_filtrosJugadores {
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info_jugador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.media90 {
+    background-color: #27AD60;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.media80 {
+    background-color: #2ECC71;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.media70 {
+    background-color: #FFD54F;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.media60 {
+    background-color: #F28742;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.posicion_jugador {
+    background-color: #1C1C1E;
+    border-radius: 5px;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.posicion_jugador p {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+.grl_jugador p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.grl_jugador {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.banderaJugador {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.banderaJugador img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* escudos jugadores */
+.fila1_jugadores > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila2_jugadores > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila3_jugadores > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila4_jugadores > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila5_jugadores > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.fila6_jugadores > div > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/*fila 1*/
+.fila1_jugadores {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.jugador1 {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.jugador1:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05);
+}
+
+.jugador2 {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.jugador2:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05);
+}
+
+.jugador3 {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.jugador3:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05);
+}
+
+.jugador4 {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.jugador4:hover {
+    cursor: pointer;
+    background-color: #CFCFCF;
+    transform: scale(1.05);
+}
+
+/*fila 2*/
+.fila2_jugadores {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*fila 3*/
+.fila3_jugadores {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*fila 4*/
+.fila4_jugadores {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*fila 5*/
+.fila5_jugadores {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*fila 6*/
+.fila6_jugadores {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*footer*/
+footer {
+    background-color: #1C1C1E;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.p_footer {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}

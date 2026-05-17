@@ -7,13 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="juagdores.css">
+    <link rel="stylesheet" href="jugadores.css">
 </head>
 <body>
     <header>
         <section class="section1_headerIncio">
             <a href="../index.html"><h1>Futra</h1></a>
-            
             <nav>
                 <ul class="li_nav">
                     <a href="../index.html"><li>Inicio</li></a>
@@ -24,12 +23,251 @@
                 </ul>
             </nav>
         </section>
-        
-        <a href="../inicioSesion_pack/inicioSesion.html"><button class="button_incioSesion">Incia sesion</button></a>
+        <a href="../inicioSesion_pack/inicioSesion.html"><button class="button_incioSesion">Inicia sesion</button></a>
     </header>
 
     <main>
-        <p>jugadores</p>
+        <section class="container_filtrosJugadores">
+            <input class="input_filtrosJugadores" type="text" placeholder="Buscar jugador">
+            <select class="select_filtroJugadores">
+                <option value="">Posición</option>
+                <option value="">Portero</option>
+                <option value="">Defensa</option>
+                <option value="">Centrocampista</option>
+                <option value="">Delantero</option>
+            </select>
+            <select class="select_filtroJugadores">
+                <option value="">Liga</option>
+                <option value="">La Liga EASports</option>
+                <option value="">Premier League</option>
+                <option value="">Bundesliga</option>
+                <option value="">Serie A</option>
+                <option value="">Ligue 1</option>
+            </select>
+            <select class="select_filtroJugadores">
+                <option value="">Equipo</option>
+                <option value="">FC Barcelona</option>
+                <option value="">Real Madrid</option>
+                <option value="">Atletico de Madrid</option>
+                <option value="">Villarreal</option>
+            </select>
+            <select class="select_filtroJugadores">
+                <option value="">País</option>
+                <option value="">España</option>
+                <option value="">Francia</option>
+                <option value="">Portugal</option>
+                <option value="">Italia</option>
+                <option value="">Inglaterra</option>
+                <option value="">Alemania</option>
+            </select>
+            <select class="select_filtroJugadores">
+                <option value="">Valoración</option>
+                <option value="">+95</option>
+                <option value="">+90</option>
+                <option value="">+85</option>
+                <option value="">+80</option>
+                <option value="">+75</option>
+                <option value="">+70</option>
+            </select>
+        </section>
+
+        <section class="container_jugadores">
+
+            <section class="fila1_jugadores"> <!--fila 1-->
+                <div class="jugador1">
+                    <img src="jugadores_img/lamine.png" alt="Lamine Yamal">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>86</p></div>
+                        <div class="posicion_jugador"><p>ED</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador2">
+                    <img src="jugadores_img/mbappe.png" alt="Mbappé">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media90"><p>91</p></div>
+                        <div class="posicion_jugador"><p>DC</p></div>
+                        <div class="banderaJugador"><img src="francia.webp" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador3">
+                    <img src="jugadores_img/pedri.webp" alt="Pedri">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>87</p></div>
+                        <div class="posicion_jugador"><p>MC</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador4">
+                    <img src="jugadores_img/fermin.webp" alt="Fermín">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>80</p></div>
+                        <div class="posicion_jugador"><p>MC</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fila2_jugadores"> <!--fila 2-->
+                <div class="jugador1">
+                    <img src="jugadores_img/lewandowski.png" alt="Lewandowski">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>89</p></div>
+                        <div class="posicion_jugador"><p>DC</p></div>
+                        <div class="banderaJugador"><img src="polonia.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador2">
+                    <img src="jugadores_img/raphinha.png" alt="Raphinha">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>87</p></div>
+                        <div class="posicion_jugador"><p>ED</p></div>
+                        <div class="banderaJugador"><img src="brasil.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador3">
+                    <img src="jugadores_img/deJong.webp" alt="De Jong">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>85</p></div>
+                        <div class="posicion_jugador"><p>MCD</p></div>
+                        <div class="banderaJugador"><img src="holanda.avif" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador4">
+                    <img src="jugadores_img/balde.png" alt="Balde">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>82</p></div>
+                        <div class="posicion_jugador"><p>LI</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fila3_jugadores"> <!--fila 3-->
+                <div class="jugador1">
+                    <img src="jugadores_img/eric.webp" alt="Eric García">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media70"><p>78</p></div>
+                        <div class="posicion_jugador"><p>DFC</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador2">
+                    <img src="jugadores_img/cubarsi.webp" alt="Cubarsí">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media70"><p>77</p></div>
+                        <div class="posicion_jugador"><p>DFC</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador3">
+                    <img src="jugadores_img/kounde.png" alt="Koundé">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>84</p></div>
+                        <div class="posicion_jugador"><p>LD</p></div>
+                        <div class="banderaJugador"><img src="francia.webp" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador4">
+                    <img src="jugadores_img/joan.webp" alt="Joan">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media70"><p>75</p></div>
+                        <div class="posicion_jugador"><p>DFC</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fila4_jugadores"> <!--fila 4-->
+                <div class="jugador1">
+                    <img src="jugadores_img/vini.png" alt="Vinícius Jr">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media90"><p>90</p></div>
+                        <div class="posicion_jugador"><p>EI</p></div>
+                        <div class="banderaJugador"><img src="brasil.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador2">
+                    <img src="jugadores_img/arda.png" alt="Arda Güler">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>80</p></div>
+                        <div class="posicion_jugador"><p>CAM</p></div>
+                        <div class="banderaJugador"><img src="turquia.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador3">
+                    <img src="jugadores_img/jude.png" alt="Bellingham">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media90"><p>90</p></div>
+                        <div class="posicion_jugador"><p>MC</p></div>
+                        <div class="banderaJugador"><img src="inglaterra.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador4">
+                    <img src="jugadores_img/tchouameni.png" alt="Tchouaméni">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>84</p></div>
+                        <div class="posicion_jugador"><p>MCD</p></div>
+                        <div class="banderaJugador"><img src="francia.webp" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fila5_jugadores"> <!--fila 5-->
+                <div class="jugador1">
+                    <img src="jugadores_img/valverde.png" alt="Valverde">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>86</p></div>
+                        <div class="posicion_jugador"><p>MC</p></div>
+                        <div class="banderaJugador"><img src="uruguay.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador2">
+                    <img src="jugadores_img/carreras.png" alt="Carreras">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media70"><p>72</p></div>
+                        <div class="posicion_jugador"><p>LI</p></div>
+                        <div class="banderaJugador"><img src="españa.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador3">
+                    <img src="jugadores_img/huijsen.png" alt="Huijsen">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media70"><p>78</p></div>
+                        <div class="posicion_jugador"><p>DFC</p></div>
+                        <div class="banderaJugador"><img src="holanda.avif" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador4">
+                    <img src="jugadores_img/rudiger.png" alt="Rüdiger">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>85</p></div>
+                        <div class="posicion_jugador"><p>DFC</p></div>
+                        <div class="banderaJugador"><img src="alemania.avif" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fila6_jugadores"> <!--fila 6-->
+                <div class="jugador1">
+                    <img src="jugadores_img/arnold.png" alt="Arnold">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media80"><p>85</p></div>
+                        <div class="posicion_jugador"><p>LD</p></div>
+                        <div class="banderaJugador"><img src="inglaterra.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="jugador2">
+                    <img src="jugadores_img/courtois.png" alt="Courtois">
+                    <div class="info_jugador">
+                        <div class="grl_jugador media90"><p>90</p></div>
+                        <div class="posicion_jugador"><p>POR</p></div>
+                        <div class="banderaJugador"><img src="belgica.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
     </main>
 
     <footer>
