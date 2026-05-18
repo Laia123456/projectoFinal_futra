@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /*para poner el boton a la derecha*/
+    position: relative;
 }
 
 .section1_headerIncio {
@@ -23,7 +23,7 @@ header {
     justify-content: center;
 }
 
-.section1_headerIncio a { /*para quitar el estilo de los enlaces*/
+.section1_headerIncio a {
     text-decoration: none;
     color: whitesmoke;
 }
@@ -31,7 +31,6 @@ header {
 h1 {
     font-size: 50px;
     margin: 0;
-    text-decoration: none;
     color: whitesmoke;
 }
 
@@ -40,15 +39,15 @@ h1 {
     width: 120px;
     font-size: 15px;
     border-radius: 5px;
-    position: absolute; /*para poner el boton a la derecha*/
+    position: absolute;
     top: 5;
     right: 0;
-    margin-top: -15px;
     margin-right: 25px;
-    border-style: none; /*quitar el estilo del borde del boton*/
+    border-style: none;
+    margin-top: -15px;
 }
 
-button:hover { /*añadir hover al boton*/
+button:hover {
     cursor: pointer;
     background-color: #d4d4d4;
 }
@@ -58,15 +57,48 @@ button:hover { /*añadir hover al boton*/
     margin-top: 7px;
     margin-bottom: 5px;
     list-style: none;
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
 }
 
-
 /*main*/
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
 
+.container_noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 900px;
+}
 
+.noticia {
+    background-color: #E0E0E0;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    box-sizing: border-box;
+}
+
+.noticia:hover {
+    background-color: #CFCFCF;
+    transform: scale(1.02);
+}
+
+.noticia_titulo {
+    font-size: 18px;
+    margin: 0;
+    color: #1C1C1E;
+    font-weight: bold;
+}
 
 /*footer*/
 footer {
@@ -76,12 +108,8 @@ footer {
 }
 
 .p_footer {
-    background-color: #1C1C1E;
-    color: whitesmoke;
     margin: 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-top: solid 1px #3A3A3C;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
