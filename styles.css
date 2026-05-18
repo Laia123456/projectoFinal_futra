@@ -76,8 +76,12 @@ footer {
 }
 
 .p_footer {
+    background-color: #1C1C1E;
+    color: whitesmoke;
     margin: 0;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: solid 1px #3A3A3C;
 }
