@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futra</title>
+    <title>Futra - Alineaciones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
@@ -11,39 +11,99 @@
 </head>
 <body>
     <header>
-        <section class="section1_headerIncio">
+        <section class="section1_header_inicio">
             <a href="../index.html"><h1>Futra</h1></a>
             <nav>
-                <ul class="li_nav">
+                <ul class="lista_nav">
                     <a href="../index.html"><li>Inicio</li></a>
                     <a href="../equipos_pack/equipos.html"><li>Equipos</li></a>
-                    <a href="alineaciones.html"><li>Alineaciones</li></a>
+                    <a href="alineaciones.html"><li class="nav_activo">Alineaciones</li></a>
                     <a href="../jugadores_pack/jugadores.html"><li>Jugadores</li></a>
                     <a href="../tacticas_pack/tacticas.html"><li>Tacticas</li></a>
                 </ul>
             </nav>
         </section>
-        <a href="../inicioSesion_pack/inicioSesion.html"><button class="button_incioSesion">Inicia sesion</button></a>
+        <a href="../inicioSesion_pack/inicioSesion.html"><button class="boton_sesion">Inicia sesion</button></a>
     </header>
 
     <main>
-        <section class="container_alineaciones">
+        <section class="contenedor_alineaciones">
 
-            <a href="crearAlineacion/crearAlineacion.html">
-                <div class="alineacion_nueva">
-                    <p class="alineacion_plus">+</p>
-                    <p class="alineacion_nueva_texto">Nueva alineación</p>
+            <p class="seccion_label">Mis alineaciones</p>
+
+            <div class="alineaciones_grid">
+
+                <!-- Botón nueva alineación -->
+                <a href="crearAlineacion/crearAlineacion.html" class="alineacion_nueva_link">
+                    <div class="alineacion_nueva">
+                        <div class="alineacion_nueva_circulo">
+                            <span class="alineacion_plus">+</span>
+                        </div>
+                        <p class="alineacion_nueva_texto">Nueva alineación</p>
+                    </div>
+                </a>
+
+                <!-- Alineación 1: 4-3-3 -->
+                <div class="alineacion_card">
+                    <div class="alineacion_acento"></div>
+                    <div class="alineacion_campo">
+                        <img src="img_alineaciones/4-3-3.jpg" alt="Formación 4-3-3" class="alineacion_img">
+                    </div>
+                    <div class="alineacion_info">
+                        <span class="alineacion_formacion">4-3-3</span>
+                        <p class="alineacion_nombre">Mi 4-3-3</p>
+                    </div>
                 </div>
-            </a>
 
-            <div class="alineacion_ejemplo">
-                <p class="alineacion_nombre">Mi 4-3-3</p>
+                <!-- Alineación 2: 4-2-3-1 -->
+                <div class="alineacion_card">
+                    <div class="alineacion_acento"></div>
+                    <div class="alineacion_campo">
+                        <img src="img_alineaciones/4-2-3-1.png" alt="Formación 4-2-3-1" class="alineacion_img">
+                    </div>
+                    <div class="alineacion_info">
+                        <span class="alineacion_formacion">4-2-3-1</span>
+                        <p class="alineacion_nombre">Mi 4-2-3-1</p>
+                    </div>
+                </div>
+
+                <!-- Alineación 3: 4-4-2 -->
+                <div class="alineacion_card">
+                    <div class="alineacion_acento"></div>
+                    <div class="alineacion_campo">
+                        <img src="img_alineaciones/4-4-2.png" alt="Formación 4-4-2" class="alineacion_img">
+                    </div>
+                    <div class="alineacion_info">
+                        <span class="alineacion_formacion">4-4-2</span>
+                        <p class="alineacion_nombre">Mi 4-4-2</p>
+                    </div>
+                </div>
+
+                <!-- Alineación 4: 3-5-2 -->
+                <div class="alineacion_card">
+                    <div class="alineacion_acento"></div>
+                    <div class="alineacion_campo">
+                        <img src="img_alineaciones/3-5-2.png" alt="Formación 3-5-2" class="alineacion_img">
+                    </div>
+                    <div class="alineacion_info">
+                        <span class="alineacion_formacion">3-5-2</span>
+                        <p class="alineacion_nombre">Mi 3-5-2</p>
+                    </div>
+                </div>
+
+                <!-- Alineación 5: 5-3-2 -->
+                <div class="alineacion_card">
+                    <div class="alineacion_acento"></div>
+                    <div class="alineacion_campo">
+                        <img src="img_alineaciones/5-3-2.webp" alt="Formación 5-3-2" class="alineacion_img">
+                    </div>
+                    <div class="alineacion_info">
+                        <span class="alineacion_formacion">5-3-2</span>
+                        <p class="alineacion_nombre">Mi 5-3-2</p>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="alineacion_ejemplo">
-                <p class="alineacion_nombre">Mi 4-2-3-1</p>
-            </div>
-
         </section>
     </main>
 
