@@ -1,82 +1,69 @@
-    let jugadores = document.querySelectorAll(".jugador_card");
-    let buscador = document.querySelector(".input_filtrosJugadores");
-    let selects = document.querySelectorAll(".select_filtroJugadores");
+let jugadores = document.querySelectorAll(".jugador_card");
+let buscador = document.querySelector(".input_filtrosJugadores");
+let selects = document.querySelectorAll(".select_filtroJugadores");
 
+function filtrarJugadores() {
 
-    function filtrarJugadores() {
+    let texto = buscador.value.toLowerCase();
+    let posicion = selects[0].value;
+    let pais = selects[1].value;
+    let media = selects[2].value;
 
-        let texto = buscador.value.toLowerCase();
-        let posicion = selects[0].value;
-        let pais = selects[1].value;
-        let media = selects[2].value;
+    jugadores.forEach(function(jugador) {
 
+        let nombreJugador = jugador.querySelector(".jugador_nombre").textContent.toLowerCase();
+        let posicionJugador = jugador.querySelector(".posicion_jugador p").textContent;
+        let mediaJugador = parseInt(
+            jugador.querySelector(".grl_jugador p").textContent
+        );
 
-        jugadores.forEach(function(jugador) {
+        // ✅ FIX: usar alt en vez de src
+        let bandera = jugador.querySelector(".banderaJugador img").alt.toLowerCase();
 
-            let nombreJugador = jugador.querySelector(".jugador_nombre").textContent.toLowerCase();
-            let posicionJugador = jugador.querySelector(".posicion_jugador p").textContent;
-            let mediaJugador = parseInt(
-                jugador.querySelector(".grl_jugador p").textContent
-            );
+        let mostrar = true;
 
-            let bandera = jugador.querySelector(".banderaJugador img").src.toLowerCase();
+        // filtro nombre
+        if (!nombreJugador.includes(texto)) {
+            mostrar = false;
+        }
 
-            let mostrar = true;
+        // filtro posición
+        if (posicion !== "") {
 
-            if(nombreJugador.includes(texto) == false) {
+            let posicionesPermitidas = posicion.split(" ");
+
+            if (!posicionesPermitidas.includes(posicionJugador)) {
                 mostrar = false;
             }
+        }
 
+        // filtro país (FIX)
+        if (pais !== "") {
 
-            if(posicion != "") {
-
-                let posicionesPermitidas = posicion.split(" ");
-
-                if(posicionesPermitidas.includes(posicionJugador) == false) {
-                    mostrar = false;
-                }
-
+            if (!bandera.includes(pais.toLowerCase())) {
+                mostrar = false;
             }
+        }
 
+        // filtro media
+        if (media !== "") {
 
-            if(pais != "") {
+            let mediaMinima = parseInt(media);
 
-                if(bandera.includes(pais.toLowerCase()) == false) {
-                    mostrar = false;
-                }
-
+            if (mediaJugador < mediaMinima) {
+                mostrar = false;
             }
+        }
 
-
-            if(media != "") {
-
-                let mediaMinima = parseInt(media);
-
-                if(mediaJugador < mediaMinima) {
-                    mostrar = false;
-                }
-
-            }
-
-
-            if(mostrar == true) {
-                jugador.style.display = "flex";
-            }
-
-            else {
-                jugador.style.display = "none";
-            }
-
-        });
-
-    }
-
-
-
-    buscador.addEventListener("input", filtrarJugadores);
-
-    selects.forEach(function(select) {
-
-        select.addEventListener("change", filtrarJugadores);
+        // mostrar / ocultar
+        jugador.style.display = mostrar ? "flex" : "none";
 
     });
+}
+
+// eventos
+buscador.addEventListener("input", filtrarJugadores);
+
+selects.forEach(function(select) {
+    select.addEventListener("change", filtrarJugadores);
+});

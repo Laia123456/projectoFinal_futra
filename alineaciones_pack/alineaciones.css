@@ -203,6 +203,11 @@ footer {
     background-color: #1C1C1E;
     color: whitesmoke;
     margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: solid 1px #3A3A3C;
 }
 
 .p_footer {
