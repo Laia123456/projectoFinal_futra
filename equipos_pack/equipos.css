@@ -226,6 +226,10 @@ footer {
     background-color: #1C1C1E;
     color: whitesmoke;
     margin: 0;
+    position: fixed; /*deja el footer fijo*/
+    bottom: 0; /*deja el footer abajo*/
+    left: 0;
+    width: 100%; /*ocupa todo el ancho*/
 }
 
 .p_footer {
