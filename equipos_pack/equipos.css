@@ -12,13 +12,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative; /*como un fondo para los absolute*/
 }
 
 .section1_headerIncio {
     width: 700px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*direccion columna*/
     align-items: center;
     justify-content: center;
 }
@@ -39,7 +39,7 @@ h1 {
     width: 120px;
     font-size: 15px;
     border-radius: 5px;
-    position: absolute;
+    position: absolute; /*se meve libre por el relative*/
     top: 5;
     right: 0;
     margin-right: 25px;
@@ -89,7 +89,6 @@ main {
     background-color: #ffffff;
     color: #1C1C1E;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .select_filtroEquipos {
@@ -103,13 +102,12 @@ main {
     color: #555555;
     cursor: pointer;
     width: 100%;
-    box-sizing: border-box;
 }
 
 /* grid equipos */
 .container_escuadosEquipos {
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
+    display: grid; /*canvierte como en cuadricula*/
+    grid-template-columns: repeat(5, 200px); /*5 filas de 200px*/
     gap: 16px;
     align-content: start;
     justify-content: center;
@@ -125,16 +123,15 @@ main {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    box-sizing: border-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05); /*sombra*/
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /*animacion*/
     width: 200px;
     height: 200px;
 }
 
 .equipo_card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px); /*mueve la targeta 4px arriba*/
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12); /*animacion sombra*/
 }
 
 .equipo_acento {
@@ -154,13 +151,12 @@ main {
 .equipo_escudo {
     width: 70px;
     height: 70px;
-    object-fit: contain;
+    object-fit: contain; /*deja los objetos fijos*/
 }
 
 .equipo_body {
     width: 100%;
     padding: 0 12px 12px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +208,6 @@ main {
 .laliga_logo img {
     height: 16px;
     width: auto;
-    display: block;
 }
 
 .banderaEspana img {
