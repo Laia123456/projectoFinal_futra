@@ -1,6 +1,7 @@
 let filtroPais = document.querySelector("#filtroPais");
 let filtroLiga = document.querySelector("#filtroLiga");
 let filtroValoracion = document.querySelector("#filtroValoracion");
+let inputBusqueda = document.querySelector(".input_filtrosEquipos");
 let equipos = document.querySelectorAll(".equipo_card"); //selecciona todas las targetas de los equipos
 
 
@@ -9,6 +10,8 @@ function filtrarEquipos() {
     let paisSeleccionado = filtroPais.value; //pasi seleccionado = valor del pais en html
     let ligaSeleccionada = filtroLiga.value; //liga seleccionada = valor de la liga en html
     let valoracionSeleccionada = filtroValoracion.value; //valoracion seleccionado = valor de la valoracion en html
+
+    let textoBusqueda = inputBusqueda.value.toLowerCase(); //texto del buscador
 
     for (let i = 0; i < equipos.length; i++) { //recorre todos los equipos
 
@@ -30,8 +33,23 @@ function filtrarEquipos() {
             .querySelector(".grl_equipos p")
             .textContent;
 
+        // busca el nombre del equipo
+        let nombreEquipo =
+            equipos[i]
+            .querySelector(".equipo_nombre")
+            .textContent
+            .toLowerCase();
+
         //eseñar o no la targeta del equipo
         let mostrar = true;
+
+        // filtro buscador por nombre
+        if (
+            textoBusqueda != "" &&
+            !nombreEquipo.includes(textoBusqueda)
+        ) {
+            mostrar = false;
+        }
 
         // si el pais seleccionado no coincide con el del equipo no se enseña
         if (
@@ -75,3 +93,4 @@ function filtrarEquipos() {
 filtroPais.addEventListener("change", filtrarEquipos); //cuando cambia el filtro se ejecuta la funcion
 filtroLiga.addEventListener("change", filtrarEquipos);
 filtroValoracion.addEventListener("change", filtrarEquipos);
+inputBusqueda.addEventListener("input", filtrarEquipos); //buscador en tiempo real
