@@ -13,7 +13,6 @@
     <header>
         <section class="section1_headerIncio">
             <a href="../index.html"><h1>Futra</h1></a>
-            
             <nav>
                 <ul class="li_nav">
                     <a href="../index.html"><li>Inicio</li></a>
@@ -24,20 +23,19 @@
                 </ul>
             </nav>
         </section>
-        
         <a href="../inicioSesion_pack/inicioSesion.html"><button class="button_incioSesion">Incia sesion</button></a>
     </header>
 
     <main>
 
-        <section class="container_filtrosEquipos"> <!--filtros-->
+        <section class="col_filtros">
             <input class="input_filtrosEquipos" type="text" placeholder="Buscar equipo">
-            <select class="select_filtroEquipos"> <!--clubes/selccion-->
+            <select class="select_filtroEquipos">
                 <option value="">Clubes/Seleccion</option>
                 <option value="">Clubes</option>
                 <option value="">Selcciona</option>
             </select>
-            <select class="select_filtroEquipos"> <!--liga-->
+            <select class="select_filtroEquipos">
                 <option value="">Liga</option>
                 <option value="">La Liga EASports</option>
                 <option value="">Premier League</option>
@@ -45,7 +43,7 @@
                 <option value="">Serie A</option>
                 <option value="">Ligue 1</option>
             </select>
-            <select class="select_filtroEquipos"> <!--pais-->
+            <select class="select_filtroEquipos">
                 <option value="">Pais</option>
                 <option value="">España</option>
                 <option value="">Francia</option>
@@ -55,7 +53,7 @@
                 <option value="">Paises Bajos</option>
                 <option value="">Alemania</option>
             </select>
-            <select class="select_filtroEquipos"> <!--competicion-->
+            <select class="select_filtroEquipos">
                 <option value="">Competición</option>
                 <option value="">Champions League</option>
                 <option value="">Europa League</option>
@@ -63,14 +61,14 @@
                 <option value="">Eredivise</option>
                 <option value="">La Liga EASports</option>
             </select>
-            <select class="select_filtroEquipos"> <!--formacion-->
+            <select class="select_filtroEquipos">
                 <option value="">Formación</option>
                 <option value="">4-3-3 (ofensiva)</option>
                 <option value="">4-3-3 (defensiva)</option>
                 <option value="">4-2-3-1</option>
                 <option value="">5-3-2</option>
             </select>
-            <select class="select_filtroEquipos"> <!--GRL-->
+            <select class="select_filtroEquipos">
                 <option value="">Valoración</option>
                 <option value="">+95</option>
                 <option value="">+90</option>
@@ -82,180 +80,347 @@
         </section>
 
         <section class="container_escuadosEquipos">
-            <section class="fila1_equipos"> <!--fila 1-->
-                <div class="barca">
-                    <img src="equipos_img/barça.png" alt="Barça">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media80"><p>85</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="realMadrid">
-                    <img src="equipos_img/realMadrid.png" alt="Real Madrid">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media80"><p>85</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="atleticoMadrid">
-                    <img src="equipos_img/atleti.png" alt="Atletico de Madrid">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media80"><p>82</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="villareal">
-                    <img src="equipos_img/villarreal.png" alt="Villareal">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>79</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-            </section> 
 
-            <section class="fila2_equipos"><!--fila 2-->
-                <div class="betis">
-                    <img src="equipos_img/betis.png" alt="Betis">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>79</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/barça.png" alt="Barça" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">FC Barcelona</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media80"><p>85</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="celta">
-                    <img src="equipos_img/celta.png" alt="Celta">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>76</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="realSociedad">
-                    <img src="equipos_img/realSociedad.png" alt="Real Sociedad">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>78</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="getafe">
-                    <img src="equipos_img/getafe.png" alt="Getafe">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>75</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-            </section> 
+            </div>
 
-            <section class="fila3_equipos"> <!--fila 3-->
-                <div class="osasuna">
-                    <img src="equipos_img/osasuna.png" alt=" Osasuna">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>77</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/realMadrid.png" alt="Real Madrid" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Real Madrid</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media80"><p>85</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="espanyol">
-                    <img src="equipos_img/espanyol.png" alt="Español">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>75</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="girona">
-                    <img src="equipos_img/girona.png" alt="Girona">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>77</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="athletic">
-                    <img src="equipos_img/athletic.png" alt="Athletic club de Bilbao">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media80"><p>80</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-            </section> 
+            </div>
 
-            <section class="fila4_equipos"> <!--fila 4-->
-                <div class="rayoVallecano">
-                    <img src="equipos_img/rayoVallecano.png" alt="Rayo Vallecano">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>77</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/atleti.png" alt="Atletico de Madrid" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Atlético de Madrid</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media80"><p>82</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="valencia">
-                    <img src="equipos_img/valencia.png" alt="Valencia">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>76</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="mallorca">
-                    <img src="equipos_img/mallorca.png" alt="Mallorca">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>76</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-                <div class="sevilla">
-                    <img src="equipos_img/sevilla.png" alt="Sevilla">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>75</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
-                    </div>
-                </div>
-            </section> 
+            </div>
 
-            <section class="fila5_equipos"> <!--fila 5-->
-                <div class="alaves">
-                    <img src="equipos_img/alaves.png" alt="Alaves">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>74</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/villarreal.png" alt="Villareal" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Villarreal</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>79</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="elche">
-                    <img src="equipos_img/elche.png" alt="Elche">
-                    <div class="info_equipo">   
-                        <div class="grl_equipos media70"><p>74</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/betis.png" alt="Betis" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Real Betis</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>79</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="levante">
-                    <img src="equipos_img/levante.png" alt="Levante">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>74</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/celta.png" alt="Celta" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Celta de Vigo</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>76</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="oviedo">
-                    <img src="equipos_img/oviedo.png" alt="Oviedo">
-                    <div class="info_equipo">
-                        <div class="grl_equipos media70"><p>73</p></div> <!--GRL-->
-                        <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt=""></div> <!--liga-->
-                        <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt=""></div> <!--pais-->
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/realSociedad.png" alt="Real Sociedad" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Real Sociedad</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>78</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
                     </div>
                 </div>
-            </section> 
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/getafe.png" alt="Getafe" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Getafe</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>75</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/osasuna.png" alt="Osasuna" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Osasuna</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>77</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/espanyol.png" alt="Espanyol" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Espanyol</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>75</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/girona.png" alt="Girona" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Girona</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>77</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/athletic.png" alt="Athletic Club" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Athletic Club</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media80"><p>80</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/rayoVallecano.png" alt="Rayo Vallecano" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Rayo Vallecano</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>77</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/valencia.png" alt="Valencia" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Valencia</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>76</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/mallorca.png" alt="Mallorca" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Mallorca</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>76</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/sevilla.png" alt="Sevilla" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Sevilla</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>75</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/alaves.png" alt="Alaves" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Alavés</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>74</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/elche.png" alt="Elche" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Elche</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>74</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/levante.png" alt="Levante" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Levante</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>74</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipo_card">
+                <div class="equipo_acento"></div>
+                <div class="equipo_escudo_wrap">
+                    <img src="equipos_img/oviedo.png" alt="Oviedo" class="equipo_escudo">
+                </div>
+                <div class="equipo_body">
+                    <p class="equipo_nombre">Oviedo</p>
+                    <div class="equipo_meta">
+                        <div class="grl_equipos media70"><p>73</p></div>
+                        <div class="equipo_iconos">
+                            <div class="laliga_logo"><img src="ligas_img/laLigaEasports.png" alt="La Liga"></div>
+                            <div class="banderaEspana"><img src="banderas_img/banderaEspana.png" alt="España"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
