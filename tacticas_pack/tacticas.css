@@ -4,26 +4,24 @@ body {
     background-color: whitesmoke;
 }
 
-/*header*/
+/*main*/
 header {
     background-color: #1C1C1E;
     color: whitesmoke;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative; /*como un fondo para los absolute*/
 }
 
-.section1_headerIncio {
+.header_container {
     width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.section1_headerIncio a {
+header a {
     text-decoration: none;
     color: whitesmoke;
 }
@@ -31,96 +29,91 @@ header {
 h1 {
     font-size: 50px;
     margin: 0;
-    color: whitesmoke;
 }
 
-.button_incioSesion {
+.login_button {
+    position: absolute;
+    right: 25px;
+    top: 20px;
     height: 30px;
     width: 120px;
-    font-size: 15px;
+    border: none;
     border-radius: 5px;
-    position: absolute;
-    top: 5;
-    right: 0;
-    margin-right: 25px;
-    border-style: none;
-    margin-top: -15px;
+    font-family: "Funnel Display", sans-serif;
 }
 
-button:hover {
+.login_button:hover {
     cursor: pointer;
     background-color: #d4d4d4;
 }
 
-.li_nav {
+.nav_list {
     width: 700px;
-    margin-top: 7px;
-    margin-bottom: 5px;
-    list-style: none;
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
 }
 
-/*main*/
 main {
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    padding: 40px;
 }
 
-.container_tacticas {
+.tacticas_container {
+    width: 900px;
+}
+
+.tacticas_grid {
+    display: grid; /*lo convierte como un una cuadricula*/
+    grid-template-columns: repeat(3, 1fr); /*repetir 3 veces*/
+    gap: 20px;
+}
+
+.tactica_card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.fila1_tacticas {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.fila2_tacticas {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.tactica {
-    background-color: #E0E0E0;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out;
     cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.08); /*sombra*/
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /*transicion*/
 }
 
-.tactica:hover {
-    background-color: #CFCFCF;
-    transform: scale(1.05);
+.tactica_card:hover {
+    transform: translateY(-4px); /*transicion*/
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.15); /*sombra*/
 }
 
-.tactica p {
-    font-size: 20px;
+.card_accent {
+    height: 4px;
+    background-color: #1C1C1E;
+}
+
+.card_info {
+    padding: 10px 14px 16px;
+}
+
+.card_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1C1C1E;
     margin: 0;
-    text-align: center;
 }
 
-/*footer*/
+/* footer */
 footer {
     background-color: #1C1C1E;
     color: whitesmoke;
     margin: 0;
-    position: fixed;
-    bottom: 0;
+    position: fixed; /*deja el footer fijo*/
+    bottom: 0; /*deja el footer abajo*/
     left: 0;
-    width: 100%;
-    border-top: solid 1px #3A3A3C;
+    width: 100%; /*ocupa todo el ancho*/
 }
 
 .p_footer {
