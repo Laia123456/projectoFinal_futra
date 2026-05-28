@@ -92,7 +92,6 @@ main {
     background-color: #ffffff;
     color: #1C1C1E;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .select_filtroJugadores {
@@ -106,13 +105,12 @@ main {
     color: #555555;
     cursor: pointer;
     width: 100%;
-    box-sizing: border-box;
 }
 
 /* grid jugadores */
 .container_jugadores {
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
+    display: grid; /*transforma en cuadricula*/
+    grid-template-columns: repeat(5, 200px); /*crea 5 columnas de 200px*/
     gap: 16px;
     align-content: start;
     justify-content: center;
@@ -123,21 +121,19 @@ main {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 14px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
-    box-sizing: border-box;
     width: 200px;
     height: 200px;
 }
 
 .jugador_card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px); /*transicion*/
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12); /*sombra*/
 }
 
 .jugador_acento {
@@ -156,13 +152,12 @@ main {
 .jugador_img {
     width: 90px;
     height: 90px;
-    object-fit: contain;
+    object-fit: contain; /*mantiene las img del mismo tamaño*/
 }
 
 .jugador_body {
     width: 100%;
     padding: 0 12px 12px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +224,7 @@ main {
 .banderaJugador img {
     width: 18px;
     height: 18px;
-    object-fit: contain;
+    object-fit: contain; /*mantiene las img del mismo tamaño*/
 }
 
 /* footer */
@@ -237,11 +232,10 @@ footer {
     background-color: #1C1C1E;
     color: whitesmoke;
     margin: 0;
-    position: fixed;
-    bottom: 0;
+    position: fixed; /*deja el footer fijo*/
+    bottom: 0; /*deja el footer abajo*/
     left: 0;
-    width: 100%;
-    border-top: solid 1px #3A3A3C;
+    width: 100%; /*ocupa todo el ancho*/
 }
 
 .p_footer {
